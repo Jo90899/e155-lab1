@@ -1,0 +1,7 @@
+#Start recording tcl command: 9/3/2024 12:09:43
+#Project Location: C:/Users/josep/Desktop/MicroPs/labs/lab1/fpga_dev_board_test/fpga_dev_board_test; Project name: dev_board_test
+prj_open "C:/Users/josep/Desktop/MicroPs/labs/lab1/fpga_dev_board_test/fpga_dev_board_test/dev_board_test.rdf"
+prj_run Export -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+#Stop recording: 9/3/2024 12:21:51
