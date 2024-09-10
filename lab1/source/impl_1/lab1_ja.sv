@@ -1,3 +1,7 @@
+// Joseph Abdelmalek
+// Email: jabdelmalek@hmc.edu
+// Top level that houses the modules led_control and seven_seg. The clock is initiated here using the on-board high speed oscillator.
+
 module lab1_ja(
 	input	logic	reset,
 	input 	logic	[3:0] s,

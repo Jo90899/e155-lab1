@@ -13,45 +13,68 @@
 # // of the Customer's facilities without the express written permission of SISW,
 # // and may not be used in any way not expressly authorized by SISW.
 # //
-vlib work
-vlog -reportprogress 300 -work work C:/Users/josep/Desktop/MicroPs/labs/lab1/lab1/source/impl_1/lab1_xx.sv
-# Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
-# Start time: 01:39:36 on Sep 10,2024
-# vlog -reportprogress 300 -work work C:/Users/josep/Desktop/MicroPs/labs/lab1/lab1/source/impl_1/lab1_xx.sv 
-# -- Compiling module lab1_ja
-# 
-# Top level modules:
-# 	lab1_ja
-# End time: 01:39:37 on Sep 10,2024, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 0
-vlog -reportprogress 300 -work work C:/Users/josep/Desktop/MicroPs/labs/lab1/lab1/source/impl_1/led_control.sv
-# Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
-# Start time: 01:39:37 on Sep 10,2024
-# vlog -reportprogress 300 -work work C:/Users/josep/Desktop/MicroPs/labs/lab1/lab1/source/impl_1/led_control.sv 
-# -- Compiling module led_control
-# 
-# Top level modules:
-# 	led_control
-# End time: 01:39:37 on Sep 10,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vlog -reportprogress 300 -work work C:/Users/josep/Desktop/MicroPs/labs/lab1/lab1/source/impl_1/seven_seg.sv
-# Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
-# Start time: 01:39:37 on Sep 10,2024
-# vlog -reportprogress 300 -work work C:/Users/josep/Desktop/MicroPs/labs/lab1/lab1/source/impl_1/seven_seg.sv 
-# -- Compiling module seven_seg
-# 
-# Top level modules:
-# 	seven_seg
-# End time: 01:39:37 on Sep 10,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
 vsim work.lab1_ja
 # vsim work.lab1_ja 
-# Start time: 01:39:46 on Sep 10,2024
+# Start time: 12:04:32 on Sep 10,2024
 # ** Note: (vsim-3812) Design is being optimized...
 # ** Error: C:/Users/josep/Desktop/MicroPs/labs/lab1/lab1/source/impl_1/lab1_xx.sv(11): Module 'HSOSC' is not defined.
 #  For instance 'hf_osc' at path 'lab1_ja'
 # Optimization failed
 # ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=1, Warnings=0.
 # Error loading design
-# End time: 01:39:49 on Sep 10,2024, Elapsed time: 0:00:03
+# End time: 12:04:34 on Sep 10,2024, Elapsed time: 0:00:02
 # Errors: 1, Warnings: 0
+vsim -voptargs=+acc work.lab1_ja
+# vsim -voptargs="+acc" work.lab1_ja 
+# Start time: 12:04:38 on Sep 10,2024
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Error: C:/Users/josep/Desktop/MicroPs/labs/lab1/lab1/source/impl_1/lab1_xx.sv(11): Module 'HSOSC' is not defined.
+#  For instance 'hf_osc' at path 'lab1_ja'
+# Optimization failed
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=1, Warnings=1.
+# Error loading design
+# End time: 12:04:39 on Sep 10,2024, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 1
+vsim -voptargs=+acc work.lab1_ja -L iCE40UP
+# vsim -voptargs="+acc" work.lab1_ja -L iCE40UP 
+# Start time: 12:04:59 on Sep 10,2024
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.lab1_ja(fast)
+# Loading iCE40UP.HSOSC(fast)
+# Loading work.led_control(fast)
+# Loading work.seven_seg(fast)
+# Trace back: Error QStructure::sort: invalid command name ""
+#   <6:C:/mtitcl/vsim/qstructure.tc_:2478: ::QStructure::sort .main_pane.structure 0 ascending
+#   <5:eval:1: ::QStructure::structsort .main_pane.structure 0 ascending
+#   <4:eval:1: ::namespace inscope ::QStructure {structsort .main_pane.structure} 0 ascending
+#   >3:proc:26: ::.main_pane.structure.interior.cs.body.struct sort 0 ascending
+#   >2:proc:10: ::.main_pane.structure.interior.cs.body.struct _initializeSortColumn
+#   <1:eval:1: ::namespace inscope ::vsimwidgets::Hierarchy {::.main_pane.structure.interior.cs.body.struct _initializeSortColumn}
+add wave -position insertpoint  \
+{sim:/lab1_ja/s[3]} \
+{sim:/lab1_ja/s[2]} \
+{sim:/lab1_ja/s[1]} \
+{sim:/lab1_ja/s[0]} \
+sim:/lab1_ja/led \
+{sim:/lab1_ja/led[2]} \
+{sim:/lab1_ja/led[1]} \
+{sim:/lab1_ja/led[0]} \
+sim:/lab1_ja/seg \
+{sim:/lab1_ja/seg[6]} \
+{sim:/lab1_ja/seg[5]} \
+{sim:/lab1_ja/seg[4]} \
+{sim:/lab1_ja/seg[3]} \
+{sim:/lab1_ja/seg[2]} \
+{sim:/lab1_ja/seg[1]} \
+{sim:/lab1_ja/seg[0]} \
+sim:/lab1_ja/int_osc
+force s 0000
+run 100
+force s 0001
+run 100
+# End time: 12:27:32 on Sep 10,2024, Elapsed time: 0:22:33
+# Errors: 0, Warnings: 1

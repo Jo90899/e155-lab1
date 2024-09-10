@@ -9,24 +9,24 @@ module led_control(
 	output 	logic 	[2:0] led
 );
 
+	// Initialize the clock
 	logic [23:0] counter;
 	
 	
 	// Simple clock counter
 	always_ff @(posedge clk) begin
 		if (~reset) begin
-			counter <= 24'd0;
-			led[2] <= 1'd0;
+			counter <= 24'd0; // Reset counter
+			led[2] <= 1'd0; // Reset LED
 		end else if (counter >= 10000000) begin
-			counter <= 24'd0;
-			led[2] <= ~led[2];
+			counter <= 24'd0; // Reset counter
+			led[2] <= ~led[2]; // Invert the value of the LED
 		end else begin
-			counter <= counter + 1;
+			counter <= counter + 1; // Increment by 1
 		end
 	end
 
-	assign led[0] = s[0] ^ s[1];
-	assign led[1] = s[2] & s[3];
-	
+	assign led[0] = s[0] ^ s[1]; // S0 XOR S1
+	assign led[1] = s[2] & s[3]; // S2 AND S3
 
 endmodule
