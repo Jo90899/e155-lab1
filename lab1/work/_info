@@ -1,0 +1,86 @@
+m255
+K4
+z2
+!s11f vlog 2024.2 2024.05, May 20 2024
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/josep/Desktop/MicroPs/labs/lab1/lab1
+vlab1_ja
+2C:/Users/josep/Desktop/MicroPs/labs/lab1/lab1/source/impl_1/lab1_xx.sv
+Z1 DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
+Z2 !s110 1725957577
+!i10b 1
+!s100 AmJO8QVg@VKjQeR;fbaj=1
+I<VhO2f]]19fRHCgHUjaki2
+S1
+R0
+Z3 w1725955933
+8C:/Users/josep/Desktop/MicroPs/labs/lab1/lab1/source/impl_1/lab1_xx.sv
+FC:/Users/josep/Desktop/MicroPs/labs/lab1/lab1/source/impl_1/lab1_xx.sv
+!i122 0
+L0 1 17
+Z4 VDg1SIo80bB@j0V0VzS_@n1
+Z5 OL;L;2024.2;79
+r1
+!s85 0
+31
+!s108 1725957576.000000
+!s107 C:/Users/josep/Desktop/MicroPs/labs/lab1/lab1/source/impl_1/lab1_xx.sv|
+!s90 -reportprogress|300|-work|work|C:/Users/josep/Desktop/MicroPs/labs/lab1/lab1/source/impl_1/lab1_xx.sv|
+!i113 0
+Z6 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z7 tCvgOpt 0
+vled_control
+2C:/Users/josep/Desktop/MicroPs/labs/lab1/lab1/source/impl_1/led_control.sv
+R1
+R2
+!i10b 1
+!s100 BQKc]7V`fARgWgf`Q`LFP3
+ICcgKnoJ^GZg85@9X<9Z5_2
+S1
+R0
+w1725956003
+8C:/Users/josep/Desktop/MicroPs/labs/lab1/lab1/source/impl_1/led_control.sv
+FC:/Users/josep/Desktop/MicroPs/labs/lab1/lab1/source/impl_1/led_control.sv
+!i122 1
+Z8 L0 5 28
+R4
+R5
+r1
+!s85 0
+31
+Z9 !s108 1725957577.000000
+!s107 C:/Users/josep/Desktop/MicroPs/labs/lab1/lab1/source/impl_1/led_control.sv|
+!s90 -reportprogress|300|-work|work|C:/Users/josep/Desktop/MicroPs/labs/lab1/lab1/source/impl_1/led_control.sv|
+!i113 0
+R6
+R7
+vseven_seg
+2C:/Users/josep/Desktop/MicroPs/labs/lab1/lab1/source/impl_1/seven_seg.sv
+R1
+R2
+!i10b 1
+!s100 H:7=87iXTJ`R@BD[J?z@O2
+IY75FW;<MbQ``DoaV4MDhT2
+S1
+R0
+R3
+8C:/Users/josep/Desktop/MicroPs/labs/lab1/lab1/source/impl_1/seven_seg.sv
+FC:/Users/josep/Desktop/MicroPs/labs/lab1/lab1/source/impl_1/seven_seg.sv
+!i122 2
+R8
+R4
+R5
+r1
+!s85 0
+31
+R9
+!s107 C:/Users/josep/Desktop/MicroPs/labs/lab1/lab1/source/impl_1/seven_seg.sv|
+!s90 -reportprogress|300|-work|work|C:/Users/josep/Desktop/MicroPs/labs/lab1/lab1/source/impl_1/seven_seg.sv|
+!i113 0
+R6
+R7
